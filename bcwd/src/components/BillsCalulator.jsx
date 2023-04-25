@@ -10,6 +10,8 @@ const Calculator = () => {
     setResult(total);
   };
 
+  
+
   return (
     <div style={{ 
       display: "flex",
@@ -37,6 +39,7 @@ const Calculator = () => {
             }}
           />
         </div>
+        
         <div style={{ marginBottom: "20px", width: "100%" }}>
           <label style={{ marginRight: "10px" }}>Amount Per Kilowatt:</label>
           <input
@@ -65,7 +68,9 @@ const Calculator = () => {
       </div>
       {result && (
         <p style={{ margin: "20px 0 0", fontSize: "24px", fontWeight: "bold" }}>Total: ₱{result.toFixed(2)}</p>
+        
       )}
+      
     </div>
   );
 };
